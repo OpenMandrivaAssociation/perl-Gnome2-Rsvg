@@ -4,7 +4,7 @@
 Summary: Perl module for the gnome2-2.x rsvg libraries
 Name:    perl-%module
 Version: 0.10
-Release: %mkrel 2
+Release: %mkrel 4
 License: GPL or Artistic
 Group:   Development/GNOME and GTK+
 Source:  http://prdownloads.sourceforge.net/gtk2-perl/%module-%version.tar.bz2
