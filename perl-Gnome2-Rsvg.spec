@@ -1,5 +1,5 @@
 %define upstream_name    Gnome2-Rsvg
-%define upstream_version 0.10
+%define upstream_version 0.11
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -9,7 +9,7 @@ Summary:    Perl module for the gnome2-2.x rsvg libraries
 License:    GPL+ or Artistic
 Group:      Development/GNOME and GTK+
 URL:        http://gtk2-perl.sf.net/
-Source0:    http://prdownloads.sourceforge.net/gtk2-perl/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:    http://prdownloads.sourceforge.net/gtk2-perl/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires: libatk-devel
 BuildRequires: librsvg-devel => 2.4.0 
