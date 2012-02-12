@@ -11,13 +11,13 @@ Group:      Development/GNOME and GTK+
 URL:        http://gtk2-perl.sf.net/
 Source0:    http://prdownloads.sourceforge.net/gtk2-perl/%{upstream_name}-%{upstream_version}.tar.gz
 
-BuildRequires: libatk-devel
-BuildRequires: librsvg-devel => 2.4.0 
-BuildRequires: perl-ExtUtils-PkgConfig 
-BuildRequires: perl-ExtUtils-Depends 
-BuildRequires: perl-Glib => 1.00
-BuildRequires: perl-Gtk2 gtk+2-devel
-BuildRequires: perl-devel 
+BuildRequires:	pkgconfig(atk)
+BuildRequires:	pkgconfig(librsvg-2.0)
+BuildRequires:	perl(ExtUtils::PkgConfig)
+BuildRequires:	perl(ExtUtils::Depends)
+BuildRequires:	perl(Glib)
+BuildRequires:	perl(Gtk2) pkgconfig(gtk+-2.0)
+BuildRequires:	perl-devel 
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 Conflicts: drakxtools < 9.1-15mdk
