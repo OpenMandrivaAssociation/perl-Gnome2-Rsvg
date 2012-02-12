@@ -1,15 +1,15 @@
-%define upstream_name    Gnome2-Rsvg
+%define upstream_name Gnome2-Rsvg
 %define upstream_version 0.11
 
-Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
+Name:		perl-%{upstream_name}
+Version:	%perl_convert_version %{upstream_version}
 Release:	3
 
-Summary:    Perl module for the gnome2-2.x rsvg libraries
-License:    GPL+ or Artistic
-Group:      Development/GNOME and GTK+
-URL:        http://gtk2-perl.sf.net/
-Source0:    http://prdownloads.sourceforge.net/gtk2-perl/%{upstream_name}-%{upstream_version}.tar.gz
+Summary:	Perl module for the gnome2-2.x rsvg libraries
+License:	GPL+ or Artistic
+Group:		Development/GNOME and GTK+
+URL:		http://gtk2-perl.sf.net/
+Source0:	http://prdownloads.sourceforge.net/gtk2-perl/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	pkgconfig(atk)
 BuildRequires:	pkgconfig(librsvg-2.0)
@@ -18,9 +18,7 @@ BuildRequires:	perl(ExtUtils::Depends)
 BuildRequires:	perl(Glib)
 BuildRequires:	perl(Gtk2) pkgconfig(gtk+-2.0)
 BuildRequires:	perl-devel 
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
-
-Conflicts: drakxtools < 9.1-15mdk
+Conflicts:	drakxtools < 9.1-15mdk
 
 %description
 This module provides perl access to GNOME-2.x rsvg libraries
@@ -38,14 +36,9 @@ make OPTIMIZE="$RPM_OPT_FLAGS"
 #%make test || :
 
 %install
-rm -rf $RPM_BUILD_ROOT
 %makeinstall_std
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
-%defattr(-, root, root)
 %doc LICENSE 
 %{_mandir}/*/*
 %{perl_vendorarch}/Gnome2/*
