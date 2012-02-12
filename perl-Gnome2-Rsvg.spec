@@ -21,7 +21,6 @@ BuildRequires:	perl-devel
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 Conflicts: drakxtools < 9.1-15mdk
-Requires: perl-Glib >= 1.00
 
 %description
 This module provides perl access to GNOME-2.x rsvg libraries
