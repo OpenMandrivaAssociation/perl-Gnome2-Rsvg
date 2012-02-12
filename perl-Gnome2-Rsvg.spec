@@ -18,7 +18,6 @@ BuildRequires:	perl(ExtUtils::Depends)
 BuildRequires:	perl(Glib)
 BuildRequires:	perl(Gtk2) pkgconfig(gtk+-2.0)
 BuildRequires:	perl-devel 
-Conflicts:	drakxtools < 9.1-15mdk
 
 %description
 This module provides perl access to GNOME-2.x rsvg libraries
