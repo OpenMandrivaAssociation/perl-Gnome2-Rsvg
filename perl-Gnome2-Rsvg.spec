@@ -31,7 +31,7 @@ This module provides perl access to GNOME-2.x rsvg libraries
 find -type d -name CVS | rm -rf 
 
 %build
-RPM_OPT_FLAGS="$RPM_OPT_FLAGS -Os -s"
+RPM_OPT_FLAGS="$RPM_OPT_FLAGS -Os"
 export GTK2_PERL_CFLAGS="$RPM_OPT_FLAGS"
 perl Makefile.PL INSTALLDIRS=vendor
 make OPTIMIZE="$RPM_OPT_FLAGS"
