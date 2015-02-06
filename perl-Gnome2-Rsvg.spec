@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Release:	5
 
 Summary:	Perl module for the gnome2-2.x rsvg libraries
 License:	GPL+ or Artistic
