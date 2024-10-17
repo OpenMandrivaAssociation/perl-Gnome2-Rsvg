@@ -8,7 +8,7 @@ Release:	5
 Summary:	Perl module for the gnome2-2.x rsvg libraries
 License:	GPL+ or Artistic
 Group:		Development/GNOME and GTK+
-URL:		http://gtk2-perl.sf.net/
+URL:		https://gtk2-perl.sf.net/
 Source0:	http://prdownloads.sourceforge.net/gtk2-perl/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	pkgconfig(atk)
