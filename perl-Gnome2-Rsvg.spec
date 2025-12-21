@@ -11,6 +11,7 @@ Group:		Development/GNOME and GTK+
 URL:		https://gtk2-perl.sf.net/
 Source0:	http://prdownloads.sourceforge.net/gtk2-perl/%{upstream_name}-%{upstream_version}.tar.gz
 
+BuildRequires:	make
 BuildRequires:	pkgconfig(atk)
 BuildRequires:	pkgconfig(librsvg-2.0)
 BuildRequires:	perl(ExtUtils::PkgConfig)
